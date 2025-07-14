@@ -1,0 +1,164 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d0d0d;
+  color: white;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  background-color: #000;
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ffc107;
+}
+
+.home-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  background-color: #9b4c4c;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+}
+
+.highlight {
+  color: #ffc107;
+}
+
+.btn, .btn-outline {
+  display: inline-block;
+  margin: 15px 10px 0 0;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+.btn-outline {
+  border: 2px solid #ffc107;
+  color: #ffc107;
+  background: transparent;
+}
+
+.profile-img img {
+  width: 250px;
+  border-radius: 50%;
+  border: 4px solid #ffc107;
+}
+
+.about-section {
+  display: flex;
+  padding: 80px 10%;
+  gap: 50px;
+  background-color: #3728b8;
+}
+
+.about-img img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.about-content h2 {
+  color: #ffc107;
+  margin-bottom: 20px;
+}
+
+.about-content ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.about-content ul li {
+  margin: 5px 0;
+}
+
+.skills-section {
+  padding: 80px 10%;
+  background-color: #0d0d0d;
+}
+
+.skills-section h2 {
+  color: #ffc107;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.skill span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.skill .bar {
+  background-color: #333;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill .bar div {
+  height: 100%;
+  background-color: #ffc107;
+  width: 0;
+  animation: fill 1s ease forwards;
+}
+
+@keyframes fill {
+  to {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+  font-size: 0.9rem;
+}
